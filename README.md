@@ -70,18 +70,6 @@ https://raw.githubusercontent.com/Code-Leafy/G2rayXCodeLeafy/main/configs.txt
 
 ## 🚀 Installation & Usage
 
-### Method 1: Standard (Terminal)
-```bash
-# Clone the repository
-git clone https://github.com/Code-Leafy/G2ray-Panel.git
-cd G2ray-Panel
-
-# Run the panel
-bash g2ray.sh
-```
-
-### Method 2: Mobile / Web (No Terminal Required)
-If you don't have Git installed or are using a phone, follow these steps:
 1. **Fork the Repo:** Click the **Fork** button at the top right of this page to copy it to your account.
 2. **Create Codespace:** Open your forked repository, click the green **Code** button, select the **Codespaces** tab, and then click **Create codespace on main**.
 3. **Wait for Load:** Wait a few minutes for the environment to build.
