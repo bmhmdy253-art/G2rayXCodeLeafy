@@ -1,0 +1,26 @@
+name: Generate VLESS Config
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Run G2ray and save config
+        run: |
+          deno run --allow-net --allow-read --allow-env main.ts > config.txt
+
+      - name: Upload config as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-vless-config
+          path: config.txt
